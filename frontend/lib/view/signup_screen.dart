@@ -42,7 +42,7 @@ class _SignupScreenState extends State<SignupScreen> {
       });
     }
   }
-
+  
   void _signup() {
     if (!_formKey.currentState!.validate()) return;
 
@@ -69,6 +69,7 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  Text("wellcome to sptszn"),
                   Icon(Icons.sports, size: 80, color: Theme.of(context).primaryColor),
                   const SizedBox(height: 16),
                   const Text('Create Account', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold), textAlign: TextAlign.center),
